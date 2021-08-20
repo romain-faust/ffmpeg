@@ -1,0 +1,44 @@
+{
+	"author": {
+		"email": "romain.faust@gmail.com",
+		"name": "Romain Faust"
+	},
+	"description": "Set of tools for interacting with ffmpeg",
+	"devDependencies": {
+		"@romain-faust/prettier-config": "~2.0.4",
+		"@types/jest": "~27.0.1",
+		"@types/node": "~16.7.1",
+		"husky": "~7.0.1",
+		"jest": "~27.0.6",
+		"lint-staged": "~11.1.2",
+		"prettier": "~2.3.2",
+		"rxjs": "~7.3.0",
+		"ts-jest": "~27.0.5",
+		"typescript": "~4.3.5"
+	},
+	"files": [
+		"build/",
+		"changelog.md",
+		"license.md",
+		"package.json",
+		"readme.md"
+	],
+	"license": "MIT",
+	"main": "build/index.js",
+	"name": "@romain-faust/ffmpeg",
+	"peerDependencies": {
+		"rxjs": "^7.3.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/romain-faust/ffmpeg"
+	},
+	"scripts": {
+		"build": "tsc",
+		"test": "jest",
+		"test:coverage": "yarn test --coverage",
+		"typecheck": "yarn build --noEmit"
+	},
+	"types": "build/index.d.ts",
+	"version": "1.0.0"
+}
